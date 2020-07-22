@@ -36,7 +36,7 @@ Variables
     --primary-bright-red: hsl(356, 69%, 56%);
     --primary-facebook:  hsl(208, 92%, 53%);
     --primary-Twitter: hsl(203, 89%, 53%);
-    --primary-Instagram: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    --primary-Instagram: linear-gradient(45deg,#fdc468, #df4996);
     --primary-YouTube: hsl(348, 97%, 39%);
     --margin-top-pattern: 30px;
 
@@ -47,13 +47,19 @@ Variables
     --semi-bold:400;
     --grid-display-system: grid;
     --back-overlay: -100px;
+    --card-width: 248px;
+    --full-width: 100%;
+    --full-height: 100%;
+    --margin-auto: 0 auto;
+    --template-grid: 1fr 1fr 1fr 1fr;
+    --main-gap-grid:40px;
 }
 
 
 .main{
     background: var(--main-light-bg-color);
-    width: 100%;
-    height: 100%;
+    width: var(--full-width);
+    height: var(--full-height);
     font-family: var(--font-family-all);
 }
 .bold-custom{
@@ -83,23 +89,23 @@ Variables
 }
 .top-patern{
     background: var(--top-bg-light-pattern);
-    width: 100%;
+    width: var(--full-width);
     height: 250px;
-    margin: 0 auto;
+    margin: var(--margin-auto);
 }
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%);  }
 
 .wrapper-big-card{
     display: var(--grid-display-system);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-template-columns: var(--template-grid) ;
+    grid-gap: var(--main-gap-grid);
     /* margin: 0 auto; */
 }
 
 .card-main{
     background-color: var(--card-light-bg);
-    width: 248px;
+    width: var(--card-width);
     height: 230px;
 }
 
@@ -110,33 +116,36 @@ Variables
 
 .card-header-fb{
     background: var(--primary-facebook);
-    width: 100%;
+    width: var(--full-width);
     height: 3.5px;
     border-radius: 1px;
 }
 
 .card-header-twt{
     background: var(--primary-Twitter);
-    width: 100%;
+    width: var(--full-width);
     height: 3.5px;
     border-radius: 1px;
 }
 
 .card-header-ig{
     background: var(--primary-Instagram);
-    width: 100%;
+    width: var(--full-width);
     height: 3.5px;
     border-radius: 1px;
 }
 
 .card-header-yt{
     background: var(--primary-YouTube);
-    width: 100%;
+    width: var(--full-width);
     height: 3.5px;
     border-radius: 1px;
 }
 .daily{
     color: var(--primary-lime-green);
+}
+.yt-daily{
+    color: var(--primary-YouTube);
 }
 
 #card-container{
@@ -155,12 +164,32 @@ Variables
 /* Overview part */
 .overview-wrapper{
     display: var(--grid-display-system);
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-template-columns: var(--template-grid);
+    grid-gap: var(--main-gap-grid);
 }
 
 .card-overview{
     background-color: var(--card-light-bg);
-    width: 248px;
-    height: 230px;
+    width: var(--card-width);
+    height: 124px;
+}
+.top{
+    display: var(--display-box);
+    justify-content: space-between;
+    margin:15px 20px 0 20px;
+}
+
+.insight{
+    padding-top: 13px; 
+}
+.bottom{
+    display: var(--display-box);
+    justify-content: space-between;
+    margin:15px 20px 0 20px;
+}
+
+#text-container{
+    margin-top: 45px;
+    margin-bottom: 15px;
+    color: var(--main-light-text-color);
 }
