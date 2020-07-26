@@ -146,7 +146,7 @@ input:checked + .slider:before{
 }
 .container{
     display: var(--display-box);
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 .top-patern{
     background: var(--top-bg-light-pattern);
@@ -287,11 +287,15 @@ p.dark{
     padding-left: 550px;
 }
 
+.blockx{
+    display: flex;
+    justify-content: space-around;
+}
 
 @media only screen and (max-width: 1200px) {
-    .main {
+    /* .main {
       background: red;
-    }
+    } */
     .wrapper-big-card{
         display: var(--grid-display-system);
         grid-template-columns: 1fr 1fr;
@@ -309,7 +313,7 @@ p.dark{
         grid-template-columns: 1fr;
      }
      .descrip{
-         background: blue;
+         /* background: blue; */
          width: auto;
      }
      .title h2{
@@ -320,13 +324,81 @@ p.dark{
      }
      .dark-desc{
          width: 500px;
-         background: red;
+         /* background: red; */
          padding-left: 100px;
          margin-left: 2vh;
          text-align: right;
      }
 
+     /* .toggle{
+         background: yellow;
+     } */
+
+     .main{
+         width: auto;
+     }
+     .blockx{
+        display: flex;
+        justify-content: space-around;
+    }
+  }
+
+
+  
+@media only screen and (max-width: 760px) {
+    .main {
+      /* background: red; */
+      width: auto;
+    }
+    .card{
+        margin-top: 30px;
+    }
+    .wrapper-big-card{
+        display: inline-block;
+        padding-top: 100px;
+        justify-content: space-around;
+        margin:0 auto;
+    }
+
+    .overview-wrapper{
+        display: inline-block;
+        margin:0 auto;
+    }
+    
+    #text-container{
+        display: inline;
+        grid-template-columns: 1fr;
+     }
+     .descrip{
+         /* background: blue; */
+         width: auto;
+         text-align: center;
+     }
+     .title h2{
+         font-size: 4vh;
+     }
+     .text-small small{
+         font-size: 2vh;
+     }
+     .dark-desc{
+         width: 300px;
+         /* background: red; */
+         padding-left: 30px;
+         margin-left: 2vh;
+         text-align: right;
+     }
+/* 
      .toggle{
          background: yellow;
+     } */
+     #block{
+         display: inline-block;
+     }
+     .blockx{
+         display: flex;
+         justify-content: space-around;
+     }
+     .top-patern{
+         height: auto;
      }
   }
