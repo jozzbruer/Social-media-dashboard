@@ -286,3 +286,47 @@ p.dark{
     padding-top: 32px;
     padding-left: 550px;
 }
+
+
+@media only screen and (max-width: 1200px) {
+    .main {
+      background: red;
+    }
+    .wrapper-big-card{
+        display: var(--grid-display-system);
+        grid-template-columns: 1fr 1fr;
+        margin:0 auto;
+    }
+
+    .overview-wrapper{
+        display: var(--grid-display-system);
+        grid-template-columns: 1fr 1fr;
+        margin:0 auto;
+    }
+    
+    #text-container{
+        display:grid;
+        grid-template-columns: 1fr;
+     }
+     .descrip{
+         background: blue;
+         width: auto;
+     }
+     .title h2{
+         font-size: 4vh;
+     }
+     .text-small small{
+         font-size: 2vh;
+     }
+     .dark-desc{
+         width: 500px;
+         background: red;
+         padding-left: 100px;
+         margin-left: 2vh;
+         text-align: right;
+     }
+
+     .toggle{
+         background: yellow;
+     }
+  }
